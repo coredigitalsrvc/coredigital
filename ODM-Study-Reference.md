@@ -58,6 +58,8 @@ It is recommended to use a page file size (equivalent of swap in linux) of 1-2x 
 ### Enable GPU Acceleration
 To get GPU running in Windows, using Docker WSL, follow these commands:
 ```
+1. Install latest nvidia drivers
+2. Open git bash in the directory you installed WebODM, same way you launch ODM
 
     Install latest nvidia windows drivers
 
