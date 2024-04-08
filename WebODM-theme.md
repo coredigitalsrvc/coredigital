@@ -1,5 +1,7 @@
 # Core Digital WebODM Theme
 
+Things we did instead of processing data. 
+
 Some areas are imperfect where light colored text and backgrounds take over.
 
 ## Parameters
