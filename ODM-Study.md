@@ -1,6 +1,30 @@
 # ODM Study and Reference
 
-## Flags
+## Setting Groups
+Based on these findings, setting groups and parameters for WebODM / ODM to experiment and find optimal parameters based on input / collection type.
+
+Current platforms:
+- DJI Mavic 3E RTK (using PPK workflow for processing)
+
+### HiRes-PPK
+
+Output: hi-res orthomosaic and model of 3D structures. Absolute accuracy below .1' targeted. Orthomosaics crisp building edges and no missing data targeted. Including RTK/PPK tagging of images AND Ground Control Points (GCPs) for ODM.
+
+auto-boundary:enable
+camera-lens:brown 
+dem-resolution:1 
+dsm:enable
+dtm:enable
+feature-quality:ultra
+gps-accuracy:.1
+mesh-octree-depth:12 
+mesh-size:300000
+min-num-features:18000
+orthophoto-resolution:1 
+pc-quality:high 
+
+
+## Flag Descriptions
 
 ### gps-accuracy
 When using RTK/PPK set gps-accuracy flag to either .1m or 2x the expected vertical accuracy (i.e. .05' ft = .015m and doubled is .03m).
