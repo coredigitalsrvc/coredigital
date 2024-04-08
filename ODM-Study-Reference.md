@@ -17,6 +17,7 @@ dem-resolution:1
 dsm:enable
 dtm:enable
 feature-quality:ultra
+force-gps:true
 gps-accuracy:.1
 mesh-octree-depth:12 
 mesh-size:300000
@@ -27,6 +28,11 @@ resize-images:no
 ```
 
 ## Flag Descriptions
+
+### force-gps
+When using RTK/PPK data AND GCPs, ODM will ignore the EXIF data in images unless you use force-gps. By using this flag, both EXIF and GCP data will be used in processing. 
+
+[Source 1](https://community.opendronemap.org/t/webodm-for-survey-usage/4869)
 
 ### gps-accuracy
 When using RTK/PPK set gps-accuracy flag to either .1m or 2x the expected vertical accuracy (i.e. .05' ft = .015m and doubled is .03m).
