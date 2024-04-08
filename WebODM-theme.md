@@ -1,4 +1,4 @@
-#Core Digital WebODM Theme
+# Core Digital WebODM Theme
 
 Some areas are imperfect where light colored text and backgrounds take over.
 
