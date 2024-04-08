@@ -10,6 +10,7 @@ Current platforms:
 
 Output: hi-res orthomosaic and model of 3D structures. Absolute accuracy below .1' targeted. Orthomosaics crisp building edges and no missing data targeted. Including RTK/PPK tagging of images AND Ground Control Points (GCPs) for ODM.
 
+```
 auto-boundary:enable
 camera-lens:brown 
 dem-resolution:1 
@@ -22,7 +23,7 @@ mesh-size:300000
 min-num-features:18000
 orthophoto-resolution:1 
 pc-quality:high 
-
+```
 
 ## Flag Descriptions
 
