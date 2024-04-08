@@ -15,13 +15,12 @@ auto-boundary:enable
 camera-lens:brown 
 dem-resolution:1 
 dsm:enable
-dtm:enable
-feature-quality:ultra
+feature-type:dspsift
 force-gps:true
-gps-accuracy:.1
+gps-accuracy:.05
 mesh-octree-depth:12 
 mesh-size:300000
-min-num-features:18000
+min-num-features:16000
 orthophoto-resolution:1 
 pc-quality:high
 resize-images:no 
@@ -56,6 +55,8 @@ It is recommended to use a page file size (equivalent of swap in linux) of 1-2x 
 ```
 
 ### Enable GPU Acceleration
+**NOTE: GPU acceleration does not work using dpsift as of 4/2024**
+
 To get GPU running in Windows, using Docker WSL, follow these commands:
 ```
 1. Install latest nvidia drivers
