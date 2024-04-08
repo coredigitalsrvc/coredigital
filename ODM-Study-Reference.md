@@ -22,7 +22,8 @@ mesh-octree-depth:12
 mesh-size:300000
 min-num-features:18000
 orthophoto-resolution:1 
-pc-quality:high 
+pc-quality:high
+resize-to:disable
 ```
 
 ## Flag Descriptions
