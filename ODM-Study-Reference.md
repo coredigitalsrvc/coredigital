@@ -43,6 +43,19 @@ When using RTK/PPK set gps-accuracy flag to either .1m or 2x the expected vertic
 
 ## Windows Configuration
 
+### Windows Page File Size
+
+It is recommended to use a page file size (equivalent of swap in linux) of 1-2x RAM. In Windows 11:
+```
+1. Press Win Key
+2. Type advanced system settings and press enter
+3. Select 'Settings' for Performance
+4. Advanced tab, 'Change...' under Virtual memory
+5. Deselect automatic mgmt, make changes, click 'Set' 'Ok' and 'Apply'
+6. Reboot
+```
+
+### Enable GPU Acceleration
 To get GPU running in Windows, using Docker WSL, follow these commands:
 ```
 
