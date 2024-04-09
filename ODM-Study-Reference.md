@@ -6,24 +6,21 @@ Based on these findings, setting groups and parameters for WebODM / ODM to exper
 Current platforms:
 - DJI Mavic 3E RTK (using PPK workflow for processing)
 
-### HiRes-PPK
+### HiRes-PPK Modeling
 
 Output: hi-res orthomosaic and model of 3D structures. Absolute accuracy below .1' targeted. Orthomosaics crisp building edges and no missing data targeted. Including RTK/PPK tagging of images AND Ground Control Points (GCPs) for ODM.
 
 ```
-auto-boundary:enable
-camera-lens:brown 
-dem-resolution:1 
-dsm:enable
-feature-type:dspsift
-force-gps:true
-gps-accuracy:.05
-mesh-octree-depth:12 
-mesh-size:300000
-min-num-features:16000
-orthophoto-resolution:1 
-pc-quality:high
-resize-images:no 
+dem-resolution: .5,
+dsm: true,
+feature-quality: ultra,
+force-gps: true,
+gps-accuracy: .03,
+mesh-octree-depth: 13,
+mesh-size: 300000,
+min-num-features: 64000,
+orthophoto-resolution: 1,
+pc-quality: ultra
 ```
 
 ## Flag Descriptions
