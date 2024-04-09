@@ -86,3 +86,42 @@ An easy way to see if it worked is in docker, check which image node-odm-1 is us
 ```
 
 [Source-1](https://community.opendronemap.org/t/windows-docker-gpu/15209/6)
+
+## Flight Planning
+ODM does not seem to do as well as tools like Pix4D with creating models or crisp edges. The difference can be eliminated or reduced with PPK/RTK and varying mission parameters. Flight plans may be grouped into various terrains or end outputs for optimal parameters. At the highest level, we'll study flight parameters that may work for Modeling 3D or the built environment (.5" / 1.27cm GSD) and large scale orthomosaics (1" / 2.54cm GSD or more).
+
+### Modeling Flights - .5" / 1.25cm target GSD)
+ODM will require the user to learn a little bit more about flight planning, and possibly in our experience use a little more overlap in missions, though this is anecdotal. Our goal is to find mission paramaeters that can be used to generate the best orthomosaics and point clouds around structures. 
+
+```
+**Flight #1**
+Platform: DJI Mavic 3E RTK 20mp PPK-postprocess
+Target GSD: .5"
+Altitude: 150ft / 45.7m
+Flight Direction: 180 degrees
+Gimbal Angle: -80 degrees
+Front Overlap: 75%
+Side Overlap: 80%
+Speed: 20mph / 9m/s
+Terrain Follow (Y/N): Y
+Cross-hatch/Grid (Y/N): N
+
+**Flight #2**
+Platform: DJI Mavic 3E RTK 20mp PPK-postprocess
+Target GSD: .5"
+Altitude: 150ft / 45.7m
+Flight Direction: 135 degrees
+Gimbal Angle: -60 degrees
+Front Overlap: 75%
+Side Overlap: 80%
+Speed: 20mph / 9m/s
+Terrain Follow (Y/N): Y
+Cross-hatch/Grid (Y/N): N
+```
+
+[Source-1](https://community.opendronemap.org/t/how-can-i-improve-the-quality-of-3d-model/8661)
+Source-2
+Source-3
+
+### Large Scale Orthos
+ODM will require the user to learn a little bit more about flight planning, such as planning overlapping flights 20 degrees off from each other to reduce errors across large flight lines [here](https://smathermather.com/2019/12/16/optimizing-flight-planning-for-calibration/) - in the same post, the author recommends an 80 degree camera angle to benefit camera calibration.
