@@ -110,7 +110,7 @@ Cross-hatch/Grid (Y/N): N
 Platform: DJI Mavic 3E RTK 20mp PPK-postprocess
 Target GSD: .5"
 Altitude: 150ft / 45.7m
-Flight Direction: 135 degrees
+Flight Direction: 135 degrees (arbitrarily chose 45 degrees off)
 Gimbal Angle: -60 degrees
 Front Overlap: 75%
 Side Overlap: 80%
