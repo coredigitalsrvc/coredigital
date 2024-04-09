@@ -101,7 +101,7 @@ Altitude: 150ft / 45.7m
 Flight Direction: 180 degrees
 Gimbal Angle: -80 degrees
 Front Overlap: 75%
-Side Overlap: 80%
+Side Overlap: 85%
 Speed: 20mph / 9m/s
 Terrain Follow (Y/N): Y
 Cross-hatch/Grid (Y/N): N
@@ -113,14 +113,14 @@ Altitude: 150ft / 45.7m
 Flight Direction: 135 degrees (arbitrarily chose 45 degrees off)
 Gimbal Angle: -60 degrees
 Front Overlap: 75%
-Side Overlap: 80%
+Side Overlap: 85%
 Speed: 20mph / 9m/s
 Terrain Follow (Y/N): Y
 Cross-hatch/Grid (Y/N): N
 ```
 
 [Source-1](https://community.opendronemap.org/t/how-can-i-improve-the-quality-of-3d-model/8661)
-Source-2
+[Source-2](https://docs.webodm.net/getting-started/image-capture/)
 Source-3
 
 ### Large Scale Orthos
