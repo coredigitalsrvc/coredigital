@@ -11,29 +11,29 @@ Current platforms:
 Output: hi-res orthomosaic and model of 3D structures. Absolute accuracy below .1' targeted. Orthomosaics crisp building edges and no missing data targeted. Including RTK/PPK tagging of images AND Ground Control Points (GCPs) for ODM.
 
 ```
-dem-resolution: .5,
+auto-boundary: true,
+dem-resolution: 1,
 dsm: true,
 feature-quality: ultra,
 force-gps: true,
-gps-accuracy: .03,
-mesh-octree-depth: 13,
+mesh-octree-depth: 12,
 mesh-size: 300000,
-min-num-features: 64000,
+min-num-features: 32000,
 orthophoto-resolution: 1,
-pc-quality: ultra
+pc-quality: high
 ```
 
 ## Flag Descriptions
 
 ### force-gps
-When using RTK/PPK data AND GCPs, ODM will ignore the EXIF data in images unless you use force-gps. By using this flag, both EXIF and GCP data will be used in processing. 
+When using RTK/PPK data AND GCPs, ODM will prefer GCPs over GPS coordinates in EXIF. By using this flag, both EXIF and GCP data will be used in processing. 
 
 [Source 1](https://community.opendronemap.org/t/webodm-for-survey-usage/4869)
 
 ### gps-accuracy
 When using RTK/PPK set gps-accuracy flag to either .1m or 2x the expected vertical accuracy (i.e. .05' ft = .015m and doubled is .03m).
 
-.1m is a measurement thrown around the ODM forums when using RTK. 2x the expected vertical is from one of the maintainers of ODM but other anecdotes say tightening this up too much can cause some issues. 
+.1m is a measurement thrown around the ODM forums when using RTK. 2x the expected vertical is from one of the maintainers of ODM.
 
 [Source-1](https://community.opendronemap.org/t/odm-settings-gps-accuracy-and-textering-nadir-weight/11059)
 
@@ -96,24 +96,24 @@ Platform: DJI Mavic 3E RTK 20mp PPK-postprocess
 Target GSD: .5"
 Altitude: 150ft / 45.7m
 Flight Direction: 180 degrees
-Gimbal Angle: -80 degrees
-Front Overlap: 75%
-Side Overlap: 85%
-Speed: 20mph / 9m/s
-Terrain Follow (Y/N): Y
-Cross-hatch/Grid (Y/N): N
-
-**Flight #2**
-Platform: DJI Mavic 3E RTK 20mp PPK-postprocess
-Target GSD: .5"
-Altitude: 150ft / 45.7m
-Flight Direction: 135 degrees (arbitrarily chose 45 degrees off)
 Gimbal Angle: -60 degrees
 Front Overlap: 75%
 Side Overlap: 85%
 Speed: 20mph / 9m/s
 Terrain Follow (Y/N): Y
-Cross-hatch/Grid (Y/N): N
+Cross-hatch/Grid (Y/N): Y
+
+**Flight #2**
+Platform: DJI Mavic 3E RTK 20mp PPK-postprocess
+Target GSD: .5"
+Altitude: 150ft / 45.7m
+Flight Direction: 180 degrees
+Gimbal Angle: -80 degrees
+Front Overlap: 75%
+Side Overlap: 85%
+Speed: 20mph / 9m/s
+Terrain Follow (Y/N): Y
+Cross-hatch/Grid (Y/N): Y
 ```
 
 [Source-1](https://community.opendronemap.org/t/how-can-i-improve-the-quality-of-3d-model/8661)
