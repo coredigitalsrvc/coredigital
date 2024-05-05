@@ -21,3 +21,11 @@ Dialog Warning:e8e419
 Failed:ff6842
 Success:67ed55
 ```
+
+CSS:
+```
+#id_name {
+  background-color: rgb(240, 240, 240);
+  color: rgb(0, 0, 0);
+}
+```
